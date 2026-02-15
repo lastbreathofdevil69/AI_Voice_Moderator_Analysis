@@ -65,7 +65,7 @@ The AI voice moderator must serve as an autonomous moderator for live panel disc
 - Overlapping speech handling without context loss
 - Sub-2 second latency for real-time interaction
 
-**Technical Implementation**: Amazon Transcribe with speaker identification, Amazon Chime SDK for audio capture
+**Technical Implementation**: Amazon Transcribe with speaker identification, WebRTC for browser-based audio capture or direct microphone audio for physical events
 
 ### 4.2 Conversation Monitoring & Analysis (FR-06, FR-07, FR-08)
 
@@ -157,7 +157,7 @@ The AI voice moderator must serve as an autonomous moderator for live panel disc
 
 | Component | AWS Service | Purpose |
 |-----------|-------------|---------|
-| Audio Capture | Amazon Chime SDK | Multi-party audio streaming |
+| Audio Capture | WebRTC / Direct Microphone | Browser-based or physical audio streaming |
 | Speaker Identification | Amazon Transcribe | Real-time speaker diarization |
 | Speech-to-Text | Amazon Transcribe | Continuous transcription |
 | NLP Analysis | Amazon Comprehend | Topic extraction, sentiment analysis |
